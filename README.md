@@ -1,2 +1,11 @@
 # GameDev22-Jerry
-hi
+funny
+funny
+funny
+funny
+funny
+funny
+funny
+funny
+funny
+funny
