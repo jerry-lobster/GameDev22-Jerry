@@ -11,11 +11,16 @@ For globalvariables Mr. Ellis prefers to use document.myVarName
 <h4>Example Variables code</h4>
 
 <input id="myText01" type=text value="The Fart" >
-<input id="myTexto2" type=text value="The Poo" > <br>
+<input id="myText02" type=text value="The Poo" > <br>
 
 <input type=button value="Show Variable" onclick="{
-                                                  document.getElementById('myDiv01').innerHTML = document.getElementById('myText02').value
+                                                 let MyIn01 = document.getElementById('myDiv01').innerHTML = document.getElementById('myText02').value
+                                                  document.getElementById('MyDiv01').innerHTML = myIn01
 }"><br>
+
+<input type=button value="Using no variable" onclick="{
+                                                      document.getElementById('myDiv01').innerHTML = document.getElementById('myText02').value
+                                                      }"><br>
 
 <div id="myDiv01">ball</div>
 
