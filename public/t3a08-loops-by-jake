@@ -1,0 +1,31 @@
+Version 0.0.1
+
+<h2 align=center>t3a08-loops-by-jake.html</h2>
+
+
+<h4> Example input code</h4>
+try this:<br>
+<pre>
+    if (myLoop %2 == 1 {}
+</pre>
+
+<h4> example working code</h4>
+
+Max loops: <input id"myNum01" type=numbervalue="5" ><br>
+
+<input type=button value="Basic For loop iwth Decisions" onclick="{
+  document.getElementById('myDiv01').innerHTML = ''
+  let myTemp =''
+  
+let myMax = parseInt(document.getElementById('myNum01').value)
+
+for (let myLoop =0; myLoop < myMax; myLoop++ ){
+
+if (myLoop == 3){
+myTemp += ' dripped out '
+}myTemp += 'Loop number: ' + myLoop + '<br>'
+}
+document.getElementByID('myDiv01').innerHTML = myTemp
+}">
+
+<div id="myDiv01"><font color=red>...</font></div>
