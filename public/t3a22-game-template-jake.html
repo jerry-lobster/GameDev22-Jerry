@@ -51,13 +51,32 @@ function myCheckHit(){
 <img id="myImg01" style="position: absolute; width: 100px; height: 80px; top: 0px; left: 20px;" src="https://cdn.discordapp.com/attachments/391425476054351873/673335601176641568/unknown.png">
 <img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="https://cdn.discordapp.com/attachments/589292970541318185/609805361435770880/Pepepepe.jpg">
 
-<input type="button" value="Auto Background Left" onclick="{
+<input id="myButton01" type=button value="background move left" onclick="{
+  myTemp = '100px 0px'
+  myGlobalX -= 5
+  myTemp =  myGlobalX + 'px 0px'
+  document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+
+<input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
-  let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 66
-      myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myBody').style.backgroundPosition = myTemp
+     document.getElementById('myButton01').click() 
+  }, 100)
+    
+}">
+
+ <input id="myButton02" type=button value="background move right" onclick="{
+  myTemp = '100px 0px'
+  myGlobalX -= -5
+  myTemp =  myGlobalX + 'px 0px'
+  document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+  
+   <input type=button value="Auto Background Right" onclick="{
+  clearInterval(myClock)
+  myClock = setInterval(function(){
+     document.getElementById('myButton02').click() 
   }, 100)
     
 }">
