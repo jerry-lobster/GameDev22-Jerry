@@ -53,9 +53,9 @@ function myCheckHit(){
 
 <input type="button" value="Auto Background Left" onclick="{
   clearInterval(myClock)
-  let myTemp = '250px 0px'
+  let myTemp = '100px 0px'
   myClock = setInterval(function(){
-      myGlobalX -= 5
+      myGlobalX -= 66
       myTemp =  myGlobalX + 'px 0px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
   }, 100)
